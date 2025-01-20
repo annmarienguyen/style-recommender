@@ -1,0 +1,266 @@
+.introtext {
+  font-family: 'Futura';
+  font-size: 80px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  
+}
+
+.beginBtn {
+  border: none;
+  border-radius: 20px;
+  padding: 30px;
+  width: 250px;
+  display: block;
+  margin: auto;
+  font-family: 'Futura';
+  font-size: 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: #c2c5aa;
+
+
+}
+
+.beginBtn:hover {
+  background:#000000;
+  color: #c2c5aa;
+}
+
+.header {
+  color: #000000;
+  font-size: 50px;
+  font-family: 'Futura';
+  transform: scaleY(4.0), scaleX(10.0);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.text {
+  color: #000000;
+  font-size: 30px;
+  font-family: 'Futura';
+  text-align: center;
+}
+
+.basic {
+  color: #343a40;
+  font-family: 'Futura';
+  text-align: center;
+  font-size: 16px;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 300px 300px 300px 300px;
+  grid-template-rows: 300px 300px;
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding: 10px;
+  gap:10px 10px;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container > div {
+  border: 0.5px solid #adb5bd;
+  position: relative;
+  overflow: hidden; 
+  border-radius: 10px;
+  font-family: 'Futura';
+  text-align: center;
+}
+
+.defaulttext {
+  color: #000000;
+  font-size: 16px;
+  font-family: 'Futura';
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+
+.container > div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container > div .text {
+  position: absolute;   
+  top: 50%;             
+  left: 50%;           
+  transform: translate(-50%, -50%);  
+  color: #ffffff;        
+  font-size: 16px;     
+  opacity: 0;          
+  text-shadow: 2px 2px 10px #000000; 
+}
+
+.container > div:hover .text {
+  opacity: 1;
+}
+
+.container > div:hover img {
+  filter: blur(20px); 
+}
+
+.btn {
+  background-color: #343a40;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Futura';
+  font-weight: bold;
+  font-size: 16px;
+  color: #ffffff;
+  text-transform: uppercase;
+  width: 300px;
+  padding: 15px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+}
+
+.btn:hover {
+  background: #000000;
+  color: #e0e0e0;
+}
+
+.cb {
+  cursor: pointer;
+}
+
+.mcBtn {
+  background-color: #343a40;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Futura';
+  font-weight: bold;
+  font-size: 16px;
+  color: #ffffff;
+  text-transform: uppercase;
+  width: 300px;
+  padding: 15px;
+  position: absolute;
+  top: 84%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.mcBtn2:hover {
+  background: #343a40;
+  color: #c2c5aa;
+}
+
+.container2 {
+  display: flex;
+  align-items: center; 
+  flex-direction: column;
+  color: #343a40;
+  font-family: 'Futura';
+}
+
+.radio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;          
+  border: 0.5px solid #888;      
+  border-radius: 8px;  
+  width: 300px;      
+  margin-bottom: 3px;           
+  font-size: 16px; 
+  background-color: #f5f5f5;
+  cursor: pointer;      
+  gap: 10px;         
+  text-align: center;
+}
+
+.cb3 {
+  display: flex;
+  font-family: 'Futura';
+  font-size: 18px;
+  justify-content: center; 
+  cursor: pointer; 
+}
+
+#stores option {
+  font-family: 'Futura';
+  font-size: 18px;    
+  color: #333;
+  background-color: #ffffff;
+}
+
+#stores option:hover {
+  background-color: #e0e0e0;
+  cursor: pointer;
+}
+
+.basic2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Futura';
+}
+
+select {
+  padding: 8px;
+  font-size: 16px;
+  margin-top: 10px;    
+}
+
+.btn6 {
+  background-color: #343a40;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Futura';
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  width: 300px;
+  padding: 15px;
+  position: absolute;
+  top: 500px;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn6:hover {
+  background: #000000;
+  color: #e0e0e0;
+}
+
+#clothingRecs, #accessoryRecs {
+  display: inline-block;
+  vertical-align: top; /* Aligns the two lists vertically at the top */
+  width: 30%; /* Adjust the width of each list */
+  list-style-position: inside;
+  padding-left: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+ul {
+  font-family: 'Futura';
+  font-size: 18px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+

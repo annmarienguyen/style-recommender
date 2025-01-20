@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Fashion Quiz</title>
+        <link rel="stylesheet" href="main.css">
+
+    </head>
+    <body>
+        <h1 class="header">Fitted</h1>
+
+        <div id="intro">
+            <h2 class="introtext">Style your<br>wardrobe</h2>
+            <button class="beginBtn" type="button" id="begin">Start</button>
+
+        </div>
+        
+        <div id="question1" style="display:none;">
+            <h2 class="text">What styles are you into?</h2>
+            <p class="basic">Select up to 3</p>
+            <form id="form1">
+                <div class="container">
+                    <div>
+                        <input class="cb" type="checkbox" name="style" value="y2k" onclick="limitCheckbox('style', this, 3)">
+                        <label class="defaulttext">Y2K</label>
+                        <img src="images/y2k.png" alt="Y2K Style" class="image">
+                        <div class="text">A style the 90s and early 2000s influenced by pop culture and characterized by denim, metallics, and bold colors.</div>
+                    </div>
+                    <div>
+                        <input class="cb" type="checkbox" name="style" value="streetwear" onclick="limitCheckbox('style', this, 3)">
+                        <label class="defaulttext">Streetwear</label>
+                        <img src="images/streetwear.png" alt="Streetwear Style" class="image">
+                        <div class="text">Originating from areas like NYC and LA, streetwear draws from hip hop culture and surf culture.</div>
+                    </div>
+                    <div>
+                        <input class="cb" type="checkbox" name="style" value="vintage" onclick="limitCheckbox('style', this, 3)">
+                        <label class="defaulttext">Vintage</label>
+                        <img src="images/vintage.png" alt="Vintage Style" class="image">
+                        <div class="text">This style draws from past decades. Characterized by soft pastels and earthy tones. A timeless and classic look.</div>
+                    </div>
+                    <div>
+                        <input class="cb" type="checkbox" name="style" value="boho" onclick="limitCheckbox('style', this, 3)">
+                        <label class="defaulttext">Boho</label>
+                        <img src="images/boho.png" alt="Indie Style" class="image">
+                        <div class="text">This style emphasizes creativity and individuality. A relaxed and laidback look with earthy tones and prints.</div>
+                    </div>
+                    <div>
+                        <input class="cb" type="checkbox" name="style" value="preppy" onclick="limitCheckbox('style', this, 3)">
+                        <label class="defaulttext">Preppy</label>
+                        <img src="images/preppy.png" alt="Preppy Style" class="image">
+                        <div class="text">A style inspired by the East Coast and Ivy League, featuring pieces like Mary Janes, polo shirts, and cardigans.</div>
+                    </div>
+                    <div>
+                        <input class="cb" type="checkbox" name="style" value="grunge" onclick="limitCheckbox('style', this, 3)">
+                        <label class="defaulttext">Grunge</label>
+                        <img src="images/grunge.png" alt="Grunge Style" class="image">
+                        <div class="text">Derived from the grunge music genre, this style is characterized by thrift store pieces worn in an oversized, loose and distressed manner.</div>
+                    </div>
+                    <div>
+                        <input class="cb" type="checkbox" name="style" value="classic" onclick="limitCheckbox('style', this, 3)">
+                        <label class="defaulttext">Classic</label>
+                        <img src="images/classic.png" alt="Classic Style" class="image">
+                        <div class="text">Often seen as timeless, classic fashion is a clean, tailored look with an emphasis on quality and neutral colors.</div>
+                    </div>
+                    <div>
+                        <input class="cb" type="checkbox" name="style" value="minimal" onclick="limitCheckbox('style', this, 3)">
+                        <label class="defaulttext">Minimal</label>
+                        <img src="images/minimal.png" alt="Minimal Style" class="image">
+                        <div class="text">This style embraces functionality and simplicity. Like classic fashion, minimlism involves elegant and timeless pieces.  </div>
+                    </div>
+                </div>
+            </form>
+            <button class="btn" type="button" id="btn">Submit</button>
+        </div>
+
+        <div id="question2" style="display:none;">
+            <h2 class="text">How do you dress typically?</h2>
+            <p class="basic">2/6</p>
+            <form id="form2">
+                <div class="container2">
+                    <label class="radio">
+                        <input type="radio" name="type" value="trendy">Trendy and Fashionable</label><br>
+                    <label class="radio">
+                        <input type="radio" name="type" value="casual">Casual and Comfortable</label><br>
+                    <label class="radio">
+                        <input type="radio" name="type" value="minimalistic">Neutral and Minimalistic</label><br>
+                    <label class="radio">
+                        <input type="radio" name="type" value="bold">Bold and Expressive</label><br>
+                    <label class="radio">
+                        <input type="radio" name="type" value="professional">Professional and Polished</label><br>
+                </div>
+            </form>
+            <button class="mcBtn" type="button" id="btn2">Submit</button> 
+        </div>
+
+        <div id="question3" style="display: none;">
+            <h2 class="text">What colors do you lean toward?</h2>
+            <p class="basic">3/6</p>
+            <form id="form3">
+                <div class="container2">
+                    <label class="radio">
+                        <input type="radio" name="color" value="neutral"> Neutrals</label><br>
+                    <label class="radio">
+                        <input type="radio" name="color" value="earth"> Earth Tones</label><br>
+                    <label class="radio">
+                        <input type="radio" name="color" value="bright"> Bright Colors</label><br>
+                    <label class="radio">
+                        <input type="radio" name="color" value="dark"> Dark Colors</label><br>
+                    <label class="radio">
+                        <input type="radio" name="color" value="pastel"> Pastels</label><br>
+                </div>
+            </form>
+            <button class="mcBtn" type="button" id="btn3">Submit</button>
+        </div>
+
+        <div id="question4" style="display: none;">
+            <h2 class="text">What pattern trends do you like?</h2>
+            <p class="basic">4/6</p>
+            <form id="form4">
+                <div class="container2">
+                    <label class="radio">
+                        <input type="radio" name="pattern" value="animal">Animal Print</label><br>
+                    <label class="radio">
+                        <input type="radio" name="pattern" value="floral">Floral</label><br>
+                    <label class="radio">
+                        <input type="radio" name="pattern" value="geometric">Geometric</label><br>
+                    <label class="radio">
+                        <input type="radio" name="pattern" value="stripes">Stripes</label><br>
+                    <label class="radio">
+                        <input type="radio" name="pattern" value="solid">Solid</label><br>
+                </div>
+            </form>
+            <button class="mcBtn" type="button" id="btn4">Submit</button>
+        </div>
+
+        <div id="question5" style="display: none;">
+            <h2 class="text">What do you like to accessorize with?</h2>
+            <p class="basic">5/6</p>
+            <form id="form5">
+                <div class="'container3">
+                    <label class="cb3">
+                        <input class="cb" type="checkbox" name="accessory" value="purses">Purses and Bags
+                    </label><br>
+                    <label class="cb3">
+                        <input class="cb" type="checkbox" name="accessory" value="jewelry">Jewelry
+                    </label><br>    
+                    <label class="cb3">
+                        <input class="cb" type="checkbox" name="accessory" value="hats">Hats
+                    </label><br>    
+                    <label class="cb3">
+                        <input class="cb" type="checkbox" name="accessory" value="belts">Belts
+                    </label><br> 
+                    <label class="cb3">
+                        <input class="cb" type="checkbox" name="accessory" value="scarves">Scarves
+                    </label><br>
+                    <label class="cb3">
+                        <input class="cb" type="checkbox" name="accessory" value="nothing">Nothing
+                    </label><br>            
+                </div>
+            </form>
+            <button class="mcBtn" type="button" id="btn5">Submit</button> 
+        </div>
+
+        <div id="question6" style="display: none;">
+            <h2 class="text">What stores do you normally shop at?</h2>
+            <p class="basic">6/6</p>
+            <form id="form6">
+                <div class="basic2">
+                    <label for="stores">Choose a brand (hold cmd or ctrl to select multiple options):</label>
+                    <select name="stores" id="stores" multiple>
+                        <option value="Abercrombie">Abercrombie</option><option value="Adidas">Adidas</option>
+                        <option value="American Eagle">American Eagle</option><option value="Banana Republic">Banana Republic</option>
+                        <option value="Brandy Melville">Brandy Melville</option><option value="Champion">Champion</option>
+                        <option value="Forever 21">Forever 21</option><option value="Gap">Gap</option>
+                        <option value="H&M">H&M</option><option value="Hollister">Hollister</option>
+                        <option value="Levi's">Levi's</option><option value="Lululemon">Lululemon</option>
+                        <option value="Madewell">Madewell</option><option value="Nike">Nike</option>
+                        <option value="Target">Target</option><option value="Zara">Zara</option>
+                        <option value="Other">Other - Select this if you can't find a brand</option>
+                    </select>
+                    <br><br>
+                </div>
+            </form>
+            <button class="btn6" type="button" id="btn6">Submit</button> 
+        </div>
+
+        <div class="container" id="result" style="display: none;">
+            <h2 class="text">Personalized Recommendations!</h2>
+            <ul id="clothingRecs">
+                <p>Clothing brands you might like:</p>
+            </ul>
+            <ul id="accessoryRecs">
+                <p>Accessory brands you might like:</p>
+            </ul>
+        </div>
+
+        <div id="endscreen" stsyle="display: none;">
+
+        </div>
+
+
+    <script src="main.js"></script>
+    </body>
+</html>
